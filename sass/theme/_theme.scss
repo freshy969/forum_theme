@@ -1,0 +1,253 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+html {
+  width: 100%;
+}
+.btn {
+  border-radius: 0;
+}
+body {
+  font-size: 10px;
+  font-family: "niveau-grotesk" ;
+  font-weight: 200;
+}
+h1,h2,h3,h4,h5,h6,.navbar-brand {
+  font-family: "niveau-grotesk";
+  color: rgba(0,0,0,.78);
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+h2 {
+  font-size: 2.5rem;
+}
+.entry-content {
+  font-family: "times new roman";
+  letter-spacing: .4px;
+  font-weight: 400;
+  line-height: 1.45;
+  width: 820px;
+  margin: 0 auto;
+  color: rgba(0,0,0,.78);
+  font-size: 1.3rem;
+   padding-left: 2rem;
+    padding-right: 2rem;
+  p {
+    margin-bottom: 1.3rem;
+  }
+}
+.featured-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 39%;
+  height: 50vh;
+  overflow: hidden;
+  float: left;
+  padding: 20px 0 0 20px;
+  margin-bottom: 20px;
+  float: right;
+}
+.type-post .entry-header {
+  margin-right: calc(15% - 20px);
+  margin-left: 20px;
+  width: 35%;
+  float: right;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  padding-left: 20px;
+  background: $secondary;
+}
+#navbarNavDropdown {
+  // width: 50vw;
+}
+.navbar-brand-wrapper {
+  margin: 0 auto;
+  width: 58%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $secondary;
+}
+a.navbar-brand {
+  background: white;
+  width: 100%;
+  text-transform: lowercase;
+  font-weight: 400;
+  font-size: 4rem;
+  color: black;
+  margin: 0;
+  line-height: .8;
+}
+.navbar {
+  // height: 100vh;
+  padding: 0;
+  .container {
+    padding: 0;
+    margin: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    max-width: none;
+  }
+}
+#wrapper-navbar {
+  width: 100%;
+  text-align: center;
+}
+#page-wrapper, #index-wrapper, #single-wrapper {
+  // width: 50%;
+  // float: right;
+  // height: 100vh;
+  // overflow: scroll;
+  // padding: 0;
+  // margin: 0;
+}
+#main-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  border-bottom: 4px solid black;
+  .menu-item {
+    // border-right: 4px solid black;
+    flex-grow: 1;
+    text-align: center;
+    padding-bottom: 4px;
+    font-size: 2.5rem;
+    display: block;
+    position: relative;
+    height: 4rem;
+    line-height: 4rem;
+    &:hover {
+      a {
+        background: $secondary;
+      }
+    }
+  .nav-link {
+    display: inline;
+    padding: 0;
+    // position: absolute;
+    // padding: 0;
+    transition: transform .3s ease-in-out;
+    &:hover {
+        // transform: skew(17deg, 17deg);
+      span {
+        transform: rotate(-30deg);
+      }
+    }
+    span {
+      margin: 0 10px;
+      display: inline-block;
+      transition: transform .3s ease-in-out;
+    }
+  }
+  }
+}
+#wrapper-footer {
+  display: none;
+}
+.entry-title {
+  margin: 0 auto;
+  font-size: 3rem;
+  background: white;
+  line-height: 1;
+}
+.entry-meta {
+  font-style: 3rem;
+  transform: rotate(90deg);
+  width: 100%;
+}
+.page-template-default {
+  .entry-header {
+    width: 100%;
+    text-align: center;
+  }
+}
+article.post {
+  margin-bottom: 50px;
+}
+body.home {
+    .entry-header{ 
+      display: none;
+    }
+  .entry-title {
+    display: none;
+  }
+  .entry-content {
+  }
+  .entry-content h3 {
+    font-size: 4rem;
+    // font-style: italic;
+  }
+}
+
+#single-wrapper .container {
+  // max-width: none;
+}
+
+@media (max-width: 767.98px) { 
+  .navbar-toggler {
+    float: right;
+  }
+  .entry-content {
+    width: 100%;
+    padding: 0;
+    p {
+      font-size: 18px;
+    }
+  }
+  .type-post .entry-header {
+    margin: 0 0 15px 0;
+    padding: 0;
+    width: 100%;
+  }
+  a.navbar-brand {
+    width: 315px;
+    font-size: 2.8rem;
+  }
+  .navbar-brand-wrapper {
+    height: 30vh;
+    width: calc(100% - 30px);
+    margin: 0 15px;
+    a {
+      width: 100%;
+    }
+  }
+  .entry-title {
+    font-size: 2.8rem;
+  }
+  .wrapper {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 568px) {
+  #main-menu {
+    flex-direction: column;
+    width: 300px;
+    margin-left: 15px;
+    border: none;
+  }
+  .navbar {
+    background: $secondary;
+  }
+  .navbar-toggler {
+    padding-bottom: 13px;
+  }
+  .navbar-toggler .fa-bars {
+    font-size: 2.2rem;
+    font-weight: 300;
+  }
+  .nav-link {
+    background: white;
+  }
+  .navbar-brand-wrapper {
+    border-top: 10px solid white;
+  }
+}
