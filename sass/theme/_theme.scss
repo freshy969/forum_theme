@@ -7,11 +7,14 @@ html {
 }
 body {
   font-size: 10px;
-  font-family: "niveau-grotesk" ;
-  font-weight: 200;
+  font-family: "helvetica" ;
+  font-weight: 400;
+}
+img {
+  filter: grayscale(100%);
 }
 h1,h2,h3,h4,h5,h6,.navbar-brand {
-  font-family: "niveau-grotesk";
+  font-family: "helvetica";
   color: rgba(0,0,0,.78);
   font-weight: 400;
   letter-spacing: 1.5px;
@@ -57,19 +60,20 @@ h2 {
   align-items: center;
   padding: 0;
   padding-left: 20px;
-  background: $secondary;
+  border: 10px solid $secondary;
 }
 #navbarNavDropdown {
   // width: 50vw;
 }
 .navbar-brand-wrapper {
-  margin: 0 auto;
+  margin: 15px auto;
   width: 58%;
   height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background: $secondary;
+  display: none;
 }
 a.navbar-brand {
   background: white;
@@ -114,7 +118,7 @@ a.navbar-brand {
   flex-direction: row;
   width: 100%;
   height: auto;
-  border-bottom: 4px solid black;
+  border-bottom: 10px solid black;
   .menu-item {
     // border-right: 4px solid black;
     flex-grow: 1;
@@ -128,6 +132,7 @@ a.navbar-brand {
     &:hover {
       a {
         background: $secondary;
+        color: white;
       }
     }
   .nav-link {
@@ -193,6 +198,10 @@ body.home {
 }
 
 @media (max-width: 767.98px) { 
+  #main-menu .menu-item.current-menu-item a {
+    background: unset;
+    color: white;
+  }
   .navbar-toggler {
     float: right;
   }
@@ -215,12 +224,13 @@ body.home {
   .navbar-brand-wrapper {
     height: 30vh;
     width: calc(100% - 30px);
-    margin: 0 15px;
+    margin: 10px 15px 0 15px;
     a {
       width: 100%;
     }
   }
   .entry-title {
+    margin-left: 7px;
     font-size: 2.8rem;
   }
   .wrapper {
@@ -238,9 +248,12 @@ body.home {
     background: $secondary;
   }
   .navbar-toggler {
-    padding-bottom: 13px;
+    padding-bottom: 9px;
+    padding-top: 8px;
   }
   .navbar-toggler .fa-bars {
+    background: white;
+    color: $secondary;
     font-size: 2.2rem;
     font-weight: 300;
   }
