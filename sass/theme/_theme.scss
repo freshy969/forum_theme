@@ -171,7 +171,7 @@ a.navbar-brand {
   transform: rotate(90deg);
   width: 100%;
   position: absolute;
-  right: -116px;
+  right: -122px;
   width: auto;
   top: 110px;
 }
@@ -222,6 +222,9 @@ body.home {
     p {
       font-size: 18px;
     }
+  }
+  .entry-meta {
+    right: -116px;
   }
   .featured-image {
     // display: none;
